@@ -39,7 +39,7 @@ def search_file(filename, word):
     lst=[]
     c=1
     for line in lines:
-        if word in line.strip().lower():
+        if word.lower() in line.strip().lower():
            lst.append(c)
         c=c+1
     file.close()
